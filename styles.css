@@ -1,0 +1,94 @@
+:root {
+  --green: #008000;
+  --grey: #d3d3d3;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ff0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  color: var(--green);
+}
+section {
+  display: flex;
+}
+.circle-container {
+  text-align: center;
+}
+.circle {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: grid;
+  place-content: center;
+  transition: border 0.4s ease;
+  transition: color 0.4s ease;
+}
+.line-container {
+  display: flex;
+  align-items: center;
+  width: 75px;
+  height: 5px;
+  background-color: var(--grey);
+  position: relative;
+  top: 18px;
+  padding: 0;
+}
+.line {
+  width: 0;
+  height: 5px;
+  margin: 0;
+}
+.green-circle {
+  border: solid var(--green) 4px;
+  color: var(--green);
+}
+.grey-circle {
+  border: solid var(--grey) 4px;
+  color: var(--grey);
+}
+.grey-line {
+  color: var(--grey);
+}
+.green-line {
+  background-color: var(--green);
+  color: var(--green);
+}
+p {
+  margin-top: 0.3rem;
+}
+.grey {
+  color: var(--grey);
+}
+.green {
+  color: var(--green);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#left-button {
+  background-color: lightgray;
+}
+#right-button {
+  background-color: slateblue;
+}
